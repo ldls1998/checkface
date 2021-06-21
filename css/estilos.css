@@ -59,7 +59,7 @@ button:hover {
   align-items: center;
   padding: 15px;
   background-image: 
-  linear-gradient(115deg, rgba(20,177,232,0.8) 22%, rgba(215,91,255,0.7) 67%),
+  linear-gradient(115deg, rgba(180, 212, 241, 0.7) 22%, rgba(153, 197, 255, 0.7) 67%),
   url(https://static.vecteezy.com/system/resources/previews/001/997/626/non_2x/blurry-grocery-store-background-photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,11 +70,15 @@ button:hover {
 
 .wrap-login {
   width: 400px;
-  background: #eceff1;
+  background: #ffffff;
   border-radius: 20px;
   overflow: hidden;
   padding: 77px 55px 53px 55px;
+<<<<<<< HEAD:estilos.css
+  
+=======
  /* box-shadow: eje-x | eje-y | blur-radius | color */
+>>>>>>> a34b9c2ce2e3a1c4dd8cee605ab3ed347967e50e:css/estilos.css
 }
 
 
@@ -217,7 +221,7 @@ button:hover {
   width: 300%;
   height: 100%;
   background: #a64bf4;
-  background: -webkit-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
+  background: -webkit-linear-gradient(right, #122475, #b721ff, #21d4fd, #b721ff);
   background: -o-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
   background: -moz-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
   background: linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
@@ -266,3 +270,6 @@ button:hover {
     padding: 77px 15px 33px 15px;
   }
 }
+
+
+
