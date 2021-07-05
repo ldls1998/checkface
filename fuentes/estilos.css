@@ -1,11 +1,11 @@
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fuentes/poppins/Poppins-Regular.ttf'); 
+  src: url('poppins/Poppins-Regular.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('fuentes/poppins/Poppins-Medium.ttf'); 
+  src: url('poppins/Poppins-Medium.ttf'); 
 }
 
 @font-face {
@@ -75,6 +75,9 @@ button:hover {
   padding: 77px 55px 53px 55px;
 }
 
+.wrap-login img{
+  width: 20%;
+}
 
 /*----Formulario de user y password----*/
 

@@ -1,5 +1,5 @@
 <?php
-  $page_title = 'Página de inicio';
+  $page_title = 'Inicio';
   require_once('includes/load.php');
   if (!$session->isUserLoggedIn(true)) { redirect('index.php', false);}
 ?>

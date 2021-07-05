@@ -30,9 +30,9 @@
 <div class="wrap-login">
      <?php echo display_msg($msg); ?>
 
-     
+     <center><img class="logo" src="logo.png" alt="logo"  width="30%" ></center>
       <form method="post" action="auth.php" class="login-form validate-form"  id="formLogin" action="">
-     
+
       <span class="login-form-title">Ingreso</span>
         
         <div class="form-group" data-validate = "Usuario incorrecto">

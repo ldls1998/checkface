@@ -3,7 +3,7 @@ body{
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #ffffff;
+  background: #ECE6E1 ;
   height: 100%;
   width: 100%;
 }a{
@@ -219,9 +219,7 @@ input[type=file]{
 .jumbotron{
   margin-bottom: 0;
 }
-.jumbotron img{
-  width: 20%;
-}
+
 .list-group-item:first-child,.list-group-item:last-child{
   border-radius: 0;
 }.profile .jumbotron{
