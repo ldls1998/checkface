@@ -188,8 +188,8 @@ function tableExists($table){
             $session->msg('d','Por favor Iniciar sesión...');
             redirect('index.php', false);
 
-     elseif(!$login_level['group_status']):
-           $session->msg('d','Este nivel de usaurio esta inactivo!');
+     elseif($login_level['group_status'] === '0'):
+           $session->msg('d','Este nivel de usuario esta inactivo!');
            redirect('home.php',false);
 
      elseif($current_user['user_level'] <= (int)$require_level):
