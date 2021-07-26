@@ -21,7 +21,13 @@
           $sql .= ") VALUES (";
           $sql .= "'{$p_id}','{$s_qty}','{$s_total}','{$s_date}'";
           $sql .= ")";
+                
+          
 
+                if('{$s_qty}' > 'quantity'){
+                  $session->msg('s',"No hay stock suficiente para este producto");
+                  redirect('add_sale.php', false);
+                } else {
                 if($db->query($sql)){
                   update_product_qty($s_qty,$p_id);
                   $session->msg('s',"Venta agregada ");
@@ -29,6 +35,7 @@
                 } else {
                   $session->msg('d','Lo siento, registro falló.');
                   redirect('add_sale.php', false);
+                }
                 }
         } else {
            $session->msg("d", $errors);
@@ -56,6 +63,11 @@
 </div>
 <div class="row">
 
+</strong>
+    
+      <button type="button" class="btn btn-success">Escanear código de producto</button>
+    
+      
   <div class="col-md-12">
     <div class="panel panel-default">
       <div class="panel-heading clearfix">
