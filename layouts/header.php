@@ -175,7 +175,6 @@
       <div class="header-content">
       <div class="header-date pull-left">
         <strong><?php 
-<<<<<<< HEAD
                   //Zonahoraria corregida 
 
                   date_default_timezone_set('America/Lima');
@@ -186,14 +185,8 @@
                   
 
         
-                ?></strong>
-        
-=======
-                  date_default_timezone_set('America/Lima');
-                  $zonahoraria=new DateTime();
-                  echo $zonahoraria->format("d/m/Y  g:i a");
-        //echo date("d/m/Y  g:i a");?></strong>
->>>>>>> 6ad4956c317cb1049fe23625152c2745a9a29138
+                ?>
+
       </div>
       <div class="pull-right clearfix">
         <ul class="info-menu list-inline list-unstyled">
