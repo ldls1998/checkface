@@ -43,27 +43,27 @@ $sales = find_all_sale();
                 <th class="text-center" style="width: 100px;"> Acciones </th>
              </tr>
             </thead>
-           <tbody>
-             <?php foreach ($sales as $sale):?>
-             <tr>
-               <td class="text-center"><?php echo count_id();?></td>
-               <td><?php echo remove_junk($sale['name']); ?></td>
-               <td class="text-center"><?php echo (int)$sale['qty']; ?></td>
-               <td class="text-center"><?php echo remove_junk($sale['price']); ?></td>
-               <td class="text-center"><?php echo $sale['date']; ?></td>
-               <td class="text-center">
-                  <div class="btn-group">
-                     <a href="edit_sale.php?id=<?php echo (int)$sale['id'];?>" class="btn btn-warning btn-xs"  title="Edit" data-toggle="tooltip">
-                       <span class="glyphicon glyphicon-edit"></span>
-                     </a>
-                     <a href="delete_sale.php?id=<?php echo (int)$sale['id'];?>" class="btn btn-danger btn-xs"  title="Delete" data-toggle="tooltip">
-                       <span class="glyphicon glyphicon-trash"></span>
-                     </a>
-                  </div>
-               </td>
-             </tr>
-             <?php endforeach;?>
-           </tbody>
+          <tbody>
+              <?php foreach ($sales as $sale):?>
+              <tr>
+                <td class="text-center"><?php echo count_id();?></td>
+                <td><?php echo remove_junk($sale['name']); ?></td>
+                <td class="text-center"><?php echo (int)$sale['qty']; ?></td>
+                <td class="text-center"><?php echo remove_junk($sale['price']); ?></td>
+                <td class="text-center"><?php echo $sale['date']; ?></td>
+                <td class="text-center">
+                    <div class="btn-group">
+                      <a href="edit_sale.php?id=<?php echo (int)$sale['id'];?>" class="btn btn-warning btn-xs"  title="Edit" data-toggle="tooltip">
+                        <span class="glyphicon glyphicon-edit"></span>
+                      </a>
+                      <a href="delete_sale.php?id=<?php echo (int)$sale['id'];?>" class="btn btn-danger btn-xs"  title="Delete" data-toggle="tooltip">
+                        <span class="glyphicon glyphicon-trash"></span>
+                      </a>
+                    </div>
+                </td>
+              </tr>
+              <?php endforeach;?>
+          </tbody>
          </table>
             </div>
 
@@ -71,12 +71,59 @@ $sales = find_all_sale();
           <strong>
             <span class="glyphicon glyphicon-th"></span>
             <span>Generar la boleta </span>
+            
+
+            <div class="card">
+              <img class="card-img-top" src="holder.js/100x180/" alt="">
+              <div class="card-body">
+              
+
+
+              
+              <?php
+              $detalleTabla='';
+              $sub_total   = 0;
+              $total       = 0;
+              $arrayData   =array();
+      
+              $precioTotal=round($sale['qty'] * $sale['price'],2);
+              $sub_total  =round($sub_total + $precioTotal,2);
+              $total=round($total + $precioTotal,2);
+
+              $detalleTabla ='
+                            <tr>
+                            <td colspan="2">'.$sale['product_id'].'</td>
+                            <td class="textcenter">'.$sale['qty'].'</td>
+                            
+                            
+                            </tr>
+              
+              
+              
+              
+              ';
+
+
+              ?>
+
+
+            
+                <h4 class="card-title">total de la venta realizada ...</h4>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
+
+
           </strong>
           <div class="pull-right">
             <a href="add_sale.php" class="btn btn-primary">Generar</a>
+          
+  
+
           </div>
         </div>
 
+        
         
 
 
