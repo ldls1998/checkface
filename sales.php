@@ -213,7 +213,7 @@ $fecha = date("Y-m-d  g:i a");
         </div>
  
               
-// hasta aqui el codigo de la boleta*******
+<!-- // hasta aqui el codigo de la boleta******* -->
 
             
             
