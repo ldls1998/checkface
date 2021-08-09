@@ -176,15 +176,10 @@
       <div class="header-date pull-left">
         <strong><?php 
                   //Zonahoraria corregida 
-
                   date_default_timezone_set('America/Lima');
                   $zonahoraria=new DateTime();
                   echo $zonahoraria->format("d/m/Y  g:i a");
-
                   //echo date("d/m/Y  g:i a");
-                  
-
-        
                 ?>
 
       </div>
