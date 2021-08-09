@@ -4,15 +4,20 @@
   
    page_require_level(3);
 ?>
+
 <?php
 $sales = find_all_sale();
 ?>
+
 <?php include_once('layouts/header.php'); ?>
+
 <div class="row">
   <div class="col-md-6">
     <?php echo display_msg($msg); ?>
   </div>
 </div>
+
+
   <div class="row">
     <div class="col-md-12">
       <div class="panel panel-default">
@@ -25,6 +30,7 @@ $sales = find_all_sale();
             <a href="add_sale.php" class="btn btn-primary">Agregar venta</a>
           </div>
         </div>
+
         <div class="panel-body">
           <table class="table table-bordered table-striped">
             <thead>
@@ -59,8 +65,22 @@ $sales = find_all_sale();
              <?php endforeach;?>
            </tbody>
          </table>
+            </div>
+
+        <div class="panel-heading clearfix">
+          <strong>
+            <span class="glyphicon glyphicon-th"></span>
+            <span>Generar la boleta </span>
+          </strong>
+          <div class="pull-right">
+            <a href="add_sale.php" class="btn btn-primary">Generar</a>
+          </div>
+        </div>
+
+        
+
+
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 <?php include_once('layouts/footer.php'); ?>

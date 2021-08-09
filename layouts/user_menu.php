@@ -1,10 +1,13 @@
 <ul>
+
   <li>
     <a href="home.php">
       <i class="glyphicon glyphicon-home"></i>
-      <span>Panel de control</span>
+      <span>Panel de control </span>
     </a>
   </li>
+
+
   <li>
     <a href="#" class="submenu-toggle">
       <i class="glyphicon glyphicon-th-list"></i>
@@ -15,6 +18,8 @@
          <li><a href="add_sale.php">Agregar venta</a> </li>
      </ul>
   </li>
+
+
   <li>
     <a href="#" class="submenu-toggle">
       <i class="glyphicon glyphicon-signal"></i>
@@ -26,4 +31,6 @@
         <li><a href="daily_sales.php">Ventas diarias</a> </li>
       </ul>
   </li>
+
+  
 </ul>
