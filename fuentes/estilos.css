@@ -225,6 +225,8 @@ button:hover {
   background: -o-linear-gradient(left, #5660f1, #8121ff);
   background: -moz-linear-gradient(left, #5660f1, #8121ff);
   background: linear-gradient(left, #5660f1, #8121ff);
+  background: -webkit-gradient(left, #5660f1, #8121ff);
+  background: -ms-linear-gradient(left, #5660f1, #8121ff);
   top: 0;
   left: -100%;
 
