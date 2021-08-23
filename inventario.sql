@@ -36,7 +36,7 @@ CREATE TABLE 'categories' (
 -- Volcado de datos para la tabla `categories`
 --
 
-INSERT INTO 'categories' (`id`, `name`) VALUES
+INSERT INTO 'categories' ('id', 'name') VALUES
 (3, 'Abarrotes'),
 (4, 'Golosinas');
 
