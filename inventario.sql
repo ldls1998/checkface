@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE categories (
-  `id` int(11) UNSIGNED NOT NULL,
-  `name` varchar(60) NOT NULL
+  id INT(11) UNSIGNED NOT NULL,
+  name VARCHAR(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
